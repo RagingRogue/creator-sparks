@@ -2,6 +2,15 @@
 
 Creator Sparks is a collection of tools for content creators. The project includes a web application built with Vite, React, TypeScript, and Supabase, along with utility scripts for analyzing content integrity.
 
+## Live Demo
+
+Visit: [https://creatorsparktiktok.online]
+
+**Demo login**
+
+- Email: `test@gmail.com`
+- Password: `test123456`
+
 ## Getting Started
 
 Install dependencies:
@@ -39,5 +48,19 @@ The repository also contains a Python-based fraud detection utility:
 python fraud_detection_app.py
 ```
 
-Ensure the required environment variables for Supabase are configured before running this script.
+The repository also contains a Python-based originality detection utility
 
+cd originality_service
+python -m venv .venv
+
+# Windows: .venv\Scripts\activate
+
+# macOS/Linux: source .venv/bin/activate
+
+pip install -r requirements.txt
+
+# Start API (FastAPI + Uvicorn)
+
+uvicorn app:app --reload --port 8000
+
+Ensure the required environment variables for Supabase are configured before running this script.
