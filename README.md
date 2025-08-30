@@ -53,13 +53,13 @@ The repository also contains a Python-based originality detection utility
 cd originality_service
 python -m venv .venv
 
-# Windows: .venv\Scripts\activate
+Windows: .venv\Scripts\activate
 
-# macOS/Linux: source .venv/bin/activate
+macOS/Linux: source .venv/bin/activate
 
 pip install -r requirements.txt
 
-# Start API (FastAPI + Uvicorn)
+Start API (FastAPI + Uvicorn)
 
 uvicorn app:app --reload --port 8000
 
